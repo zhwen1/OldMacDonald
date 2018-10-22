@@ -1,5 +1,5 @@
 class Chick implements Animal 
-{     
+{   
 	private String myType;
 	private String mySound;
 	public Chick(String type, String sound)
@@ -12,13 +12,14 @@ class Chick implements Animal
 		myType = "unknown";
 		mySound = "unknown";
 	}
-	public Chick()
+	public Chick(String x, String y, String z)
 	{
-		if (Math.random()*1<0.5){
-			x =  mySound;
+		myType = x;
+		if (Math.random()<0.5){
+			mySound = y;
 		}
 		else{
-			 z = mySound;
+			mySound = z;
 		}
 
 	}
